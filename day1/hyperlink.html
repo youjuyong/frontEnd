@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HypherText(HyperLink) </title>
+    <style> /* html 태그들은 컨텐츠의 의미와 구조를 표시,html 문서의 모양(디자인요소)은 style속성으로 설정 */
+        html{
+            margin: 0px; padding:0px;
+        }
+        body {
+            margin: 0px; padding:0px;
+        }
+    </style>
+</head>
+<body>
+    <!--웹 문서 사이의 연결(링크)는 a(anchor) 태그-->
+    구글 사이트 이동 : <a href="https://www.google.com">Google</a> <!-- href는 링크될 문서의 주소-->
+    <br>
+    다음 사이트 이동 : <a href="https://www.daum.net" target = "_blank">Daum</a>
+    <!--target : "_blank" 는 새 탭으로 열기-->
+    <br>
+    <b>같은 폴더위치의 파일 이동 : </b><a href="mytest.html">mytest.html 보여주기</a>
+    <hr>
+    <!--이미지 포함 시키기-->
+    <!-- <img src="image/dalmasi.jpg"> -->
+    <img src="../image/maindog.jpg" width="50%">  <!--위도우 크기의 50%-->
+    <img src="../image/wellsikogi.jpg" width="50%">
+    <img src="../image/dalmasi.jpg" width="50%">
+    <br>
+    <!-- div 태그로 이미지가 다른 라인에 표시가 됩니다. -->
+    <div><img src="../image/maindog.jpg" width="30%"></div>  <!--위도우 크기의 30%-->
+    <div><img src="../image/wellsikogi.jpg" width="30%"></div>
+    <div><img src="../image/dalmasi.jpg" width="30%"></div>
+    <br>
+    <!-- 이미지에 a태그 적용-->
+    네이버로 이동하기 : <a href = "https://www.naver.com"><img src = "../image/naver.jpg"</a>
+</body>
+</html>
