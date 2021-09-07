@@ -9,6 +9,9 @@
             width:70%;
             margin-right: 5px;
             margin-left: 30px;
+            border-spacing: 10px;
+            border-spacing: 5px; /* 테이블 칸(셀) 사이의 간격 설정하기 */
+            /*border-collapse: collapse; 테이블 칸(셀) 사이의 간격 없애기*/
         }
         th{
             background-color:blue;
@@ -25,10 +28,23 @@
         .name{
             color:powderblue;
         }
-        td.name{ /* td 태그 class = "name" 모두를 선택합니다.*/
-           /* color:chocolate; */
-        }
         caption{
             background-color: gray;
         }
 
+        div > p{
+            color:bule;
+        }
+        p{
+            color:red;
+        }
+
+        /* 선택지 : tr:nth-child(even) tr 태그의 짝수 요소 선택 */
+
+        /*추가설명
+        color : red,green,blue 3가지 색상을 0~255 사이의 값으로 각각 혼합하여 만듭니다.
+                rgb(34,23,52)
+
+              : 자주 사용하는 색은 이름이 
+              : #oooooo -> 00 하나가 16진수값(0~255)
+        */
