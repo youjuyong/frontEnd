@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day2-3Table style.css파일</title>
+    <!--
+        css:html 문서에 디자인 특성을 적용하는방법
+        태그안에서는 style 속성,
+    --> 
+   <link rel="stylesheet" href="style.css">
+</head>
+<!--
+    selector (선택자) : 태그이름. class 또는 id속성으로 설정된 값
+        class 속성은 특정 태그에 부여하는 이름.
+            ㄴ class : 같은 이름을 사용하여 다중 선택자.
+            ㄴ id : 한개만 지정하는 단일 선택자.
+-->
+<body>
+    <table>
+        <caption>우리반 연락처</caption>
+        <tr style="width:20%;">
+            <th style="width:20%;">번호</th>
+            <th style="width:30%;">이름</th>
+            <th style="width:50%;">연락처</th>
+         </tr>
+         <tr>
+             <td>1</td>
+             <td class = "name">사나</td>
+             <td>010-2342-3322</td>
+         </tr>
+         <tr>
+             <td>2</td>
+             <td class = "name">미나</td>
+             <td>010-1234-4234</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td class = "name">다현</td>
+            <td>010-1231-1334</td>
+        </tr>
+    </table>
+
+</body>
+</html>
