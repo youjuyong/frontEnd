@@ -1,0 +1,8 @@
+.container {
+	display:flex;
+	/* display: inline-flex;(컨테이너에 딱맞춰서보정 해준다) */
+    justify-content: space-between;
+    /* justify-content: space-between(메인축 가운데에 두고 양옆으로 아이템매치) */
+    align-items: stretch;
+    /* 밑으로 쭈욱 내려줌 */
+}

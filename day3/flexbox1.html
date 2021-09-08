@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day3-css flexbox 연습1</title>
+    <style>
+        .container{
+            background-color: dodgerblue;
+            display:flex;
+            flex-wrap : wrap;
+            justify-content :center;
+        }
+        .container >div{ /*선택자 '공백'은 손자들도 
+        포함.'>'은 자식만*/
+            border:1px soild yellow;
+            background-color: azure;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body> <!-- flexbox는 box요소 태그 사용합니다. -->
+    <!--flextbox는 box요소 태그 사용합니다. div태그는 너비 가본값이
+    브아줘 너비 %100입니다.-->
+    <div class="container">
+        <div class = "item">1</div>
+        <div class = "item">2</div>
+        <div class = "item">3</div>
+        <div class = "item">4</div>
+        <div class = "item">5</div>
+        <div class = "item">1</div>
+        <div class = "item">2</div>
+        <div class = "item">3</div>
+        <div class = "item">4</div>
+        <div class = "item">5</div>
+    </div>  
+
+
+</body>
+</html>

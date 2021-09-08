@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day3-4 member 회원 등록</title>
+    <link rel = "stylesheet" href = "member.css">
+</head>
+<body>
+ 
+    <div style="width:70%;margin:auto;">
+        <!--
+            새로운 데이터를 저장하는 동작과 괸련될때는 url창에 데이터 표시를안한다.
+            특정 검색어로 조회 동작을 하는경우에는 url 창에 파라미터값을 표시하는게 일반적
+        -->
+        <form method="POST">
+        <h3>회원등록</h3>
+        <table style="width:100%;margin:auto;">
+            <tr>
+                <td>이름</td>
+                <td><input type = "text" name = "name"></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type = "password" naem = "password"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" name = "email"></td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td><input type="number" name = "age"></td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td>
+                    <select name = "address">
+                        <option value="서울">서울</option>
+                        <option value="인천">인천</option>
+                        <option value="대전">대전</option>
+                        <option value="광주">광주</option>
+                        <option value="부산">부산</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" value="male" name = "gender" id = "male">
+                    <label for = "male">남자</label>
+                    <!--label과 연결시킬 input id속성이 필요합니다. 웹접근성 구현 
+                    label을 선택해서 focus를 갖도록 합니다.-->
+                    <input type="radio" value="female" name = "gender" id = "female">
+                    <label for = "female">여자</label>
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <!--여러개를 복수로 선택할 수 있는 체크박스를 사용한다.
+                    name 을 -->
+                <td>
+                <input type="checkbox" name="hobby" value="축구" id="football">
+                <label for="football">축구</label>
+                <input type="checkbox" name="hobby" value="농구" id = "basketball">
+                <label for="basketball">농구</label>
+                <input type="checkbox" name="hobby" value="스키" id = "ski">
+                <label for="ski">스키</label>
+                <input type="checkbox" name="hobby" value="달리기" id=  "running">
+                <label for="running">달리기</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type = "submit" value="가입하기">
+                    <input type = "reset" value="다시쓰기">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+
+</body>
+</html>

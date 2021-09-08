@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'));
+* {
+    font-family: 'Jua', sans-serif;
+}
+h3{
+    font-size: 25px;
+    color:coral;
+    border-bottom: 1px solid black;
+}
+td{
+    background-color:bisque;
+    color :black;
+    font-weight: bolder;
+}
+/*속성을 이용한 선택자*/
+input[type=submit],input[type=reset]{
+    padding: 7px;
+    cursor: pointer;
+}
+input[type=submit]:hover,input[type=reset]:hover{
+    background-color: palevioletred;
+}
+input[type=name],input[type=password],input[type=email]{
+    width:70%;
+}
+/* UI 폰트*/
