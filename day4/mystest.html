@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--스크립트 작성할 수 있는 위치 !-->
+    <script>
+        function myFunction(){
+            document.getElementById("demo2").innerHTML = "Paragraphy changed"
+        }
+    </script>
+</head>
+<body>
+    <h1>My First JavaScript</h1>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+    <!--head에 버튼 이벤트 처리-->
+    <h2>Demo JavaScript in Head</h2>
+    <p id="demo2">A Paragraph</p>
+    <button type = "button" onclick = "myFunction()">try it</button>
+
+    <h2>Assigning JavaScript Values</h2>
+    <p id = "demo3"></p>
+    <!--JavaScipt 연산-->
+    <script>
+    let x,y;
+    x = 5;
+    y = 6;
+    document.getElementById("demo3").innerHTML = x + y;
+    </script>
+</body>
+</html>

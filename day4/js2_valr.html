@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 예제 #2</title>
+</head>
+<body>
+    <!-- 참고 : 자바에서 {}은 명령어 블록입니다.(if,for,while,메소드...) -> 블록 scope
+    
+    자바스크립트 변수 var의 문제점
+    1.
+    2.
+    -->
+    <script>
+        'use strict'; // 엄격모드.변수선언에 대한 처리입니다.
+        var v1 = 123;  console.log(v1);
+        var v1 = 999; console.log(v1);``
+      
+        if(10>5){
+            var v1 = 456;
+        }
+        console.log(v1);//123을 예상 그러나 456 결론 : 자바 스크립트 var선언은 블록 스콥적용이 안됩니다. 
+        var v4 = 123;
+        v4 = 'abcde';
+        console.log(v4);
+        console.log('==============================');
+    </script>
+    <script>
+        let v2 = 123; console.log(v2);
+       //let v2 = 999; console.log(v2);
+        if(10>5){
+            let v2 = 456;
+        }
+        console.log(v2);//123을 예상 그러나 456 결론 : 자바 스크립트 var선언은 블록 스콥적용이 안됩니다. 
+    </script>
+</body>
+</html>
