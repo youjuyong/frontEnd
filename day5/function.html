@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(myfunc2(20));
+
+        //함수를 이터럴 형식으로 선언
+        const myfunc1 = function(x){ //매개변수를 x는 객체를 포함하여 모든 타입이 가능합니다.
+            console.log("myfinc1 입니다");
+            return x*11;
+        }
+
+        //위의 함수 호출 ->식별자로 합니다.
+        let result = myfunc1(10);
+        console.log(result);
+
+        //함수 선언문 형식
+        function myfunc2(x){
+            console.log("myfinc2 입니다");
+            return x*12;
+        }
+
+        result = myfunc2(10);
+        console.log(result);
+
+        //Function 함수를 사용하기도 합니다. => 권장 안함.
+        //화살표(arrow) 함수 : 많이 쓰이는 형태입니다.
+        const myfunc3 = (x,y) => x*13 + y; //인자를 받아서 리턴값 전달할 때 사용.실행할 명령이 여러개일 떄는 {},return 생략 못함
+        console.log("화살표 함수 myfunc3 값입니다.")
+        console.log("화살표함수 값 => " + myfunc3(10,5));
+
+        //익명(anonymous)의 즉시 실행 함수 -> 한번만 사용되는 함수입니다. : 그륩 연산자 기호() 안에 작성합니다.
+        console.log((
+            function(a,b){
+                console.log("익명함수 입니다.");
+                return a*b;
+            }(4,5)
+        )
+        );
+    </script>
+</body>
+</html>

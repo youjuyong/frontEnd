@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        자바 스크립으트의 템플릿 문자열 : 기호는 ``는 사용합니다.(multi line) 
+    -->
+    <script>
+        console.log("4, 템플릿 문자열 테스트-----");
+        const str = `i
+        like
+        java script`;
+        //document.getElementById('result').innerHTML=str;
+        console.log(str);
+        console.log(`i
+        am
+        java`);
+        const fruit = 'Lemon';
+        const result = `<li>Apple</li>
+                        <li>${fruit}</li>
+                        <li>Mango</li>`;
+        const $result = "<li>Apple</li><li>Banna</li><li>Mango</li>";
+        document.getElementById('result').innerHTML=result;
+        document.getElementById('result').innerHTML=$result; //태그요소 렌더링은 가능, 표현식 값출력은 불가능
+        
+       
+    </script>
+</body>
+
+</html>

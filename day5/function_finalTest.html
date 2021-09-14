@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            margin-left: auto;
+            margin-right:auto;
+            background-color:pink;
+        }
+        td{
+            color: purple;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <script>
+  const rowCnt = ['','09:00~10:00','10:00~11:00','11:00~12:00','12:00~13:00','13:00~14:00','14:00~15:00'];
+  const columnCnt = ['','월요일','화요일','수요일','목요일','금요일']; 
+  const monday = ['','수학','과학','영어','미술','회화','독해']; 
+  document.write('<table border="2">');
+  for (let i = 0; i < rowCnt.length; i++) {
+     document.write('<tr>');
+        for(let j=0; j < columnCnt.length; j++){
+         document.write('<td>');
+         
+         document.write(rowCnt[i]+''+columnCnt[j] );
+         if(i>=0&&j>=0){
+             rowCnt[i]=monday[i];
+             columnCnt[j]='';
+         }
+         document.write('</td>');
+        }
+    document.write('</tr>')
+  }
+  document.write('</table>');
+ </script>
+
+</body>
+</html>

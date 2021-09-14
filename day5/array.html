@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        프로그래밍언어 일반적인 배열:
+        자바스크립트의 배열
+    -->
+    <script>
+    const arr1 = [1,2,3,4,5];
+    const arr2 = ['sana','mina','momo','nayeon'];
+    const arr3 = [9,8,'123',,12.34];
+    arr1.push("Audi");
+    arr2.pop();
+
+    console.log(arr1);
+    console.log(arr2);
+    console.log(arr3);
+    console.log(typeof arr1);
+    
+    /* 배열요소 추가 삭제
+        push(),pop() : 배열요소 끝에서동작
+        unshift(),shift() : 배열요소 처음에서 동작
+        sort() : 사전식 정렬
+    */
+    arr1[1]=39;
+    console.log(arr1); //현재 데이터
+    console.log(arr1.sort()); //오름차순 정렬출력
+    </script>
+    
+
+</body>
+</html>

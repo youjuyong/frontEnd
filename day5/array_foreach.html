@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이터러블 Iterable 객체 : 여러 개의 데이터를 저장하는 자료구조 -> 예로 배열
+        for문을 이용해서 데이터를 순서대로 값을 접근(순회)
+        foreach(함수) 메소드는 for문을 대신합니다.
+    -->
+   <p id = "demo"></p><p id="demo_each"></p>
+   <p id = "filter"></p>
+   <p id = "filter2"></p>
+   <script>
+        const list = ['sana','mina','nana','nayeon'];
+        for(let i  =0;i < list.length; i++){
+            console.log(list[i]);
+        }
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fLen = fruits.length;
+
+        let text = "<ul>";
+        for (let i = 0; i < fLen; i++) {
+         text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+
+
+        const numbers = [45,4,9,16,25];
+        const over18 = numbers.filter(myFunction);
+        document.getElementById("filter").innerHTML = over18;
+        function myFunction(value){
+            return value > 18;
+        }
+
+         const numbers2 = [45,4,9,16,25];
+         const over10 = numbers2.filter( value => value > 10 );
+         document.getElementById("filter2").innerHTML = over10;
+
+
+    </script>
+</body>
+</html>
