@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "main">
+        <h4> 오늘의 주제 </h4>
+        <ul>
+            <li>트와이스</li>
+            <li>소녀시대</li>
+            <li>원더걸스</li>
+        </ul>
+        <ul>
+            <li>사나</li>
+            <li>나연</li>
+            <li>다현</li>
+            <li>미나</li>
+        </ul>
+    </div>
+    <script>
+        const $main = document.getElementById('main');
+        console.log($main.childNodes);
+        console.log($main.children);
+        console.log($main.firstChild);
+        console.log($main.firstElementChild);
+        console.log($main.lastElementChild);
+        console.log($main.childElementCount);
+
+        const $child = $main.firstElementChild;
+        console.log($child.nextElementSibling);
+        console.log($child.nextElementSibling.innerHTML);
+
+        
+    </script>
+</body>
+</html>

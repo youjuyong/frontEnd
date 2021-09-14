@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>document.forms example</title>
+    <script>
+        function data_read(){
+            console.log("1.forms,elements 객체 이용해서 input 값가져오기");
+            const $user1 = document.forms[3].elements[0];
+            const $email1 = document.forms[3].elements[1];
+            console.log($user1.value);
+            console.log($email1.value);
+            console.log("2.name 속성값을 이용해서 가져오기");
+            const $user2 = document.frmUser.user;
+            const $email2 = document.frmUser.email;
+            console.log($user2.value);
+            console.log($email2.value);
+
+            if($user2.value.length < 3){
+                alert('이름은 3글자 이상입니다.');
+            }
+        }   
+        
+    </script>
+</head>
+
+<body>
+    <!--document.forms 객체는 form 태그들을 담고있는 HTMLCollection-->
+    <form id="sana">
+     <input type="button" onclick="alert(document.forms[0].id);" value="robby's form" /> 
+     <input type="button" onclick="alert(document.forms[0].elements[1].value);" value="form[0]의 요소 index = 1" /> 
+    </form>
+
+    <form id="mina">
+     <input type="button" onclick="alert(document.forms[1].id);" value="dave's form" />
+    </form>
+
+    <form id="momo">
+     <input type="button" onclick="alert(document.forms[2].id);" value="paul's form" />
+    </form>
+    <form action="" name = "frmUser">
+        이름 : <input type = "text" name="user">
+        이메일 : <input type = "text" name = "email">
+        <button onclick = "data_read()">버튼</button>
+    </form>
+    <script>
+        console.log(document.forms);
+    </script>
+</body>
+</html>
