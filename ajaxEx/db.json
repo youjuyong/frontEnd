@@ -1,0 +1,31 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "sana",
+      "age": 25,
+      "hobby": [
+        "movie",
+        "yoga"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "nana",
+      "age": 32,
+      "hobby": [
+        "reading",
+        "노래"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "momo",
+      "age": 29,
+      "hobby": [
+        "달리기",
+        "그림그리기"
+      ]
+    }
+  ]
+}
